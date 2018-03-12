@@ -190,3 +190,20 @@
 .buttonright{
     right: 5px;
 }
+
+/*==== Arms and hands ====*/
+.arm{
+    position: absolute;
+    width: 40px;
+    height: 230px;
+    background: #ddd963;
+    bottom: -1%;
+}
+.leftarm{
+    border-radius: 50px 0 0 0;
+    left: -10%;
+}
+.rightarm{
+    right:-10%;
+    border-radius: 0 50px 0 0;
+}
