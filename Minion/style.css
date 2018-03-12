@@ -343,7 +343,7 @@
 }
 .rightzool{
     -webkit-transform: skew(-20deg);
-    left: -6%;
+    left: -21%;
 }
 .extrafootpartleft{
     position: absolute;
@@ -351,6 +351,14 @@
     height:60px;
     background: #4f4f4f;
     left:36%;
+    bottom:-120px;
+}
+.extrafootpartright{
+    position: absolute;
+    width: 30px;
+    height:60px;
+    background: #4f4f4f;
+    right:36%;
     bottom:-120px;
     z-index: 1;
 }
