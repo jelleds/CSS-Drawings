@@ -1,14 +1,19 @@
+/*====centering everything in the screen====*/
 .center{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
+/*====invisible box====*/
 .canvas{
     width: 1000px;
     height: 800px;
     border: 2px solid black;
 }
+
+/*====minion body====*/
 .minion{
     width: 400px;
     height: 700px;
@@ -16,6 +21,7 @@
     border-radius: 200px 200px 100px 100px;
 }
 
+/*====bar glasses====*/
 .bars{
     position: absolute;
     border-radius: 5px;
@@ -53,6 +59,8 @@
 .rightglass{
     left: 42%;
 }
+
+/*====Eyes====*/
 .eyewhite{
     width: 130px;
     height: 90px;
@@ -91,6 +99,7 @@
     left: 60%;
 }
 
+/*====Mouth====*/
 .mouthindenttop{
     width: 200px;
     height: 70px;
@@ -131,6 +140,7 @@
     left: 66%;
 }
 
+/*====Pants===*/
 .pants{
     width: 400px;
     height: 150px;
@@ -151,6 +161,7 @@
     background: #32506b;
 }
 
+/*====chords====*/
 .chords{
     width: 150px;
     height: 25px;
@@ -165,7 +176,6 @@
     left: -4%;
     transform: rotate(25deg);
 }
-
 .button{
     position: absolute;
     width:18px;
