@@ -217,9 +217,39 @@
 	border-top: 50px solid #4f4f4f;
 }
 .thumb{
-    width: 30px;
+    width: 35px;
     height:50px;
     background: #4f4f4f;
     border-radius: 0 0 40px 40px;
+    z-index: 4;
+}
+.leftfinger2{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #3f3f3f;
+    bottom: -34px;
+    z-index: 3;
+}
+.leftfinger3{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #282828;
+    bottom: -19px;
+    left:10px;
+    z-index: 2;
+}
+.leftfinger4{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #4f4f4f;
+    bottom: -0px;
+    left:1px;
+    z-index: 1;
 }
 		
