@@ -252,4 +252,55 @@
     left:1px;
     z-index: 1;
 }
+
+.rightfinger2{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #3f3f3f;
+    right: 0;
+    bottom: -34px;
+    z-index: 3;
+}
+.rightfinger3{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #282828;
+    bottom: -19px;
+    right:10px;
+    z-index: 2;
+}
+.rightfinger4{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #4f4f4f;
+    bottom: -0px;
+    right:1px;
+    z-index: 1;
+}
+.leftleg{
+    position: absolute;
+    border-top: 70px solid #32506b;
+    border-left: 31px solid transparent;
+    border-right: 11px solid transparent;
+    height: 4px;
+    width: 43px;
+    top: 108%;
+    left: 40%;
+}
+.rightleg{
+    position: absolute;
+    border-top: 70px solid #32506b;
+    border-left: 11px solid transparent;
+    border-right: 31px solid transparent;
+    height: 4px;
+    width: 43px;
+    top: 108%;
+    left: 62%;
+}
 		
