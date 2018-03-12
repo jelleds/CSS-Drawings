@@ -18,7 +18,7 @@
     width: 400px;
     height: 700px;
     background: #fffb70;
-    border-radius: 200px 200px 100px 100px;
+    border-radius: 200px 200px 150px 150px;
 }
 
 /*====bar glasses====*/
@@ -31,7 +31,7 @@
     margin-top: 6px
 }
 .bar1{
-    background:#636363;
+    background:#4f4f4f;
     top:30%;
 }
 .bar2{
@@ -145,7 +145,7 @@
     width: 400px;
     height: 150px;
     background: #6d98bf;
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 120px 120px;
     top:92%;
 }
 .pantscenterpart{
@@ -207,3 +207,19 @@
     right:-10%;
     border-radius: 0 50px 0 0;
 }
+.hand {
+    position: absolute;
+    top: 110%;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 50px solid #4f4f4f;
+}
+.thumb{
+    width: 30px;
+    height:50px;
+    background: #4f4f4f;
+    border-radius: 0 0 40px 40px;
+}
+		
