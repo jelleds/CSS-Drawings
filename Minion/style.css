@@ -313,13 +313,21 @@
 /*==== feet ====*/
 .leftfoot{
     position: absolute;
-    width: 130px;
-	height: 50px;
-    top: 112%;
-    left: 12%;
+    left: 17%;
+    bottom: -120px;
+    width: 100px;
+	height: 47px;
 	-webkit-transform: skew(-20deg);
-    border-radius: 40px 0 0 5px;
-    background: #4f4f4f;
-     z-index: 1;
+	background: #4f4f4f;
+    border-radius: 40px 0 0 0px;
+}
+.zool{
+    position: absolute;
+    width: 109px;
+    height: 10px;
+    background: #282828;
+    bottom: -21%;
+    -webkit-transform: skew(20deg);
+    right: -6%;
 }
 		
