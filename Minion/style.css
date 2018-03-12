@@ -2,7 +2,6 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
 .canvas{
@@ -156,13 +155,28 @@
     width: 150px;
     height: 25px;
     background: #32506b;
-    top:63%;
+    top:64%;
 }
 .leftchord{
-    left:-6%;
-    -webkit-transform: rotate(25deg);
+    left:67%;
+    transform: rotate(-25deg);        
+}
+.rightchord{
+    left: -4%;
     transform: rotate(25deg);
 }
-.test{
-    
+
+.button{
+    position: absolute;
+    width:18px;
+    height:18px;
+    background: black;
+    border-radius: 50%;
+    top:3px;
+}
+.buttonleft{
+    left: 5px;
+}
+.buttonright{
+    right: 5px;
 }
