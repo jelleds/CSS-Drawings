@@ -1,3 +1,6 @@
+body{
+    background: #ffb296;
+}
 /*====centering everything in the screen====*/
 .center{
     position: absolute;
@@ -14,6 +17,30 @@
     height: 700px;
     background: #fffb70;
     border-radius: 200px 200px 150px 150px;
+}
+
+/*==== Hair ====*/
+
+.hair{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background:transparant;
+    top:-10%;
+    border-radius:40px 0 0 0;
+    border-left:10px solid black;
+}
+.hair1{
+    left: 40%;
+
+}
+.hair2{
+    left: 46%;
+    top:-8%;
+    height:105px;
+}
+.hair3{
+    left: 52%;
 }
 
 /*====bar glasses====*/
