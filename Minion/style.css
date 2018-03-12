@@ -304,30 +304,54 @@
     border-left: 11px solid transparent;
     border-right: 31px solid transparent;
     height: 4px;
-    width: 43px;
-    top: 108%;
-    left: 62%;
+    width: 56px;
+    top: 101%;
+    left: 52%;
+    transform: rotate(-8deg);
     z-index: 2;
 }
 
 /*==== feet ====*/
-.leftfoot{
+
+.foot{
     position: absolute;
-    left: 17%;
     bottom: -120px;
     width: 100px;
 	height: 47px;
+    background: #4f4f4f;
+}
+.leftfoot{
+    left: 17%;
 	-webkit-transform: skew(-20deg);
-	background: #4f4f4f;
     border-radius: 40px 0 0 0px;
 }
 .zool{
     position: absolute;
-    width: 109px;
+    width: 126px;
     height: 10px;
     background: #282828;
     bottom: -21%;
+}
+.leftzool{
     -webkit-transform: skew(20deg);
-    right: -6%;
+    right: -23%;
+}
+.rightfoot{
+    right: 17%;
+	-webkit-transform: skew(20deg);
+    border-radius: 0 40px 0 0;
+}
+.rightzool{
+    -webkit-transform: skew(-20deg);
+    left: -6%;
+}
+.extrafootpartleft{
+    position: absolute;
+    width: 30px;
+    height:60px;
+    background: #4f4f4f;
+    left:36%;
+    bottom:-120px;
+    z-index: 1;
 }
 		
