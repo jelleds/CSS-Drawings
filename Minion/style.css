@@ -6,15 +6,10 @@
     transform: translate(-50%,-50%);
 }
 
-/*====invisible box====*/
-.canvas{
-    width: 1000px;
-    height: 800px;
-    border: 2px solid black;
-}
-
 /*====minion body====*/
 .minion{
+    position: absolute;
+    top:39%;
     width: 400px;
     height: 700px;
     background: #fffb70;
@@ -147,18 +142,21 @@
     background: #6d98bf;
     border-radius: 0 0 120px 120px;
     top:92%;
+    z-index: 3;
 }
 .pantscenterpart{
     width: 200px;
     height: 200px;
     background: #6d98bf;
     top:82%;
+    z-index: 5;
 }
 .pocket{
     width: 80px;
     height: 65px;
     border-radius: 0 0 100px 100px;
     background: #32506b;
+    z-index: 4;
 }
 
 /*====chords====*/
@@ -170,11 +168,13 @@
 }
 .leftchord{
     left:67%;
-    transform: rotate(-25deg);        
+    transform: rotate(-25deg);     
+    z-index: 6;
 }
 .rightchord{
     left: -4%;
     transform: rotate(25deg);
+    z-index: 6;
 }
 .button{
     position: absolute;
@@ -283,15 +283,20 @@
     right:1px;
     z-index: 1;
 }
+/*==== Legs ====*/
+
 .leftleg{
     position: absolute;
     border-top: 70px solid #32506b;
     border-left: 31px solid transparent;
     border-right: 11px solid transparent;
     height: 4px;
-    width: 43px;
-    top: 108%;
-    left: 40%;
+    width: 56px;
+    top: 101%;
+    left: 24%;
+    z-index: 2;
+    transform: rotate(8deg);
+    z-index: 2;
 }
 .rightleg{
     position: absolute;
@@ -302,5 +307,19 @@
     width: 43px;
     top: 108%;
     left: 62%;
+    z-index: 2;
+}
+
+/*==== feet ====*/
+.leftfoot{
+    position: absolute;
+    width: 130px;
+	height: 50px;
+    top: 112%;
+    left: 12%;
+	-webkit-transform: skew(-20deg);
+    border-radius: 40px 0 0 5px;
+    background: #4f4f4f;
+     z-index: 1;
 }
 		
