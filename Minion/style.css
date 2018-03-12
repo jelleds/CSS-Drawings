@@ -1,0 +1,163 @@
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.canvas{
+    width: 1000px;
+    height: 800px;
+    border: 2px solid black;
+}
+.minion{
+    width: 400px;
+    height: 700px;
+    background: #fffb70;
+    border-radius: 200px 200px 100px 100px;
+}
+
+.bars{
+    position: absolute;
+    border-radius: 5px;
+    width: 440px;
+    height: 22px;
+    background: red;
+    margin-top: 6px
+}
+.bar1{
+    background:#636363;
+    top:30%;
+}
+.bar2{
+    background:#3f3f3f;
+    top:33%;
+}
+.glasses{
+    position: relative;
+    top: 20%;
+}
+.glass{
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #ddd963;
+    border-radius: 50%;
+    border: 17px solid #f7f7f7;
+}
+.leftglass{
+    right: 43%;
+}
+.rightglass{
+    left: 42%;
+}
+.eyewhite{
+    width: 130px;
+    height: 90px;
+    background: white;
+    border-radius: 50px;
+}
+.eye{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #3a3a3a;
+    border-radius: 50%;
+    border: 13px solid #91733b;
+    top: 60%;
+}
+.lefteye{
+    left: 65%;
+}
+.righteye{
+    left: 40%;
+}
+.twinkelright{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    right: 60%;
+}
+.twinkelleft{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    left: 60%;
+}
+
+.mouthindenttop{
+    width: 200px;
+    height: 70px;
+    background: #56440e;
+    top:56%;
+    border-radius: 0 0 80px 80px;
+
+}
+.mouth{
+    width: 213px;
+    height: 30px;
+    background: #fffb70;
+    top:50%;
+    border-radius: 30px 30px 100px 100px;
+
+}
+.teeth{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: white;
+    border-radius: 50%;
+}
+.tooth1{
+    top:52%;
+    left: 44%;
+}
+.tooth2{
+    top:52%;
+    left: 55%;
+}
+.tooth3{
+    top:51%;
+    left: 33%;
+}
+.tooth4{
+    top:51%;
+    left: 66%;
+}
+
+.pants{
+    width: 400px;
+    height: 150px;
+    background: #6d98bf;
+    border-radius: 0 0 100px 100px;
+    top:92%;
+}
+.pantscenterpart{
+    width: 200px;
+    height: 200px;
+    background: #6d98bf;
+    top:82%;
+}
+.pocket{
+    width: 80px;
+    height: 65px;
+    border-radius: 0 0 100px 100px;
+    background: #32506b;
+}
+
+.chords{
+    width: 150px;
+    height: 25px;
+    background: #32506b;
+    top:63%;
+}
+.leftchord{
+    left:-6%;
+    transform: rotate(25deg);
+}

@@ -1,0 +1,153 @@
+body{
+	background:yellow;
+}
+
+.centercontent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.canvas{
+	position: absolute;
+	width: 1000px;
+	height: 700px;
+	top:4%;
+	border: 3px solid black;
+	background: yellow;
+}
+
+.lefteye{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: black;
+	left: 18%;
+	top: 10%
+}
+.righteye{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: black;
+	right: 18%;
+	top: 10%
+}
+.leftiris{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: white;
+	right: 18%;
+	top: 10%
+}
+.rightiris{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: white;
+	left: 18%;
+	top: 10%
+}
+
+.nose{
+	position: absolute;	
+	width: 25px;
+	height: 15px;
+	background: black;
+	left: 0;
+	right: 0;
+	top:50%;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:500px / 50px;
+}
+
+.leftcheek{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: red;
+	left: 3%;
+	top:50%;
+}
+
+.rightcheek{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: red;
+	right: 3%;
+	top:50%;
+}
+
+.mouth{
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 25%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.lip1{
+	position: absolute;	
+	width: 130px;
+	height: 180px;
+	background: black;
+	right:10%;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom:7%;
+	border-radius:50%  50%  50%  50%  / 60%   60%   30%  30%;
+}
+
+.lipleft{
+	position: absolute;	
+	width: 150px;
+	height: 180px;
+	background: yellow;
+	right:17%;
+	left: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	bottom:4%;
+	border-radius:50%  50%  50%  50%  / 60%   60%   30%  30%;
+}
+
+.lip2{
+	position: absolute;	
+	width: 130px;
+	height: 180px;
+	background: black;
+	right:0;
+	left: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	bottom:7%;
+	border-radius:50%  50%  50%  50%  / 60%   60%   30%  30%;
+}
+
+.lipright{
+	position: absolute;	
+	width: 150px;
+	height: 180px;
+	background: yellow;
+	right:-10px;
+	left: -8%;
+	margin-left: auto;
+	margin-right: auto;
+	bottom:4%;
+	border-radius:50%  50%  50%  50%  / 60%   60%   30%  30%;
+}
+
+
