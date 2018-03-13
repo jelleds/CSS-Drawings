@@ -76,3 +76,21 @@ body{
     top: 21px;
     right: 10px;
 }
+
+.arrows{
+    background: black;
+    border-radius: 6px;
+    top: 64%;
+    left: 20%;
+}
+
+.verticalarrows{
+    position: absolute;
+     width: 45px;
+    height: 120px;
+}
+.horizontalarrows{
+    position: absolute;
+     height: 40px;
+    width: 120px;
+}
