@@ -1,5 +1,5 @@
 body{
-   
+   background: #D7AEF4;
 }
 
 .center{
@@ -78,7 +78,7 @@ body{
 }
 
 .arrows{
-    background: black;
+    background: #373737;
     border-radius: 6px;
     top: 64%;
     left: 20%;
@@ -93,4 +93,32 @@ body{
     position: absolute;
      height: 40px;
     width: 120px;
+}
+
+.buttons{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    background: #D3D3D3;
+    top: 60%;
+    left: 260px;
+    border-radius: 50px;
+    transform: rotate(-25deg)
+}
+.button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #A22E5F;
+    border:2px solid black;
+}
+
+.button1{
+    left:5px;
+    top:3px;
+}
+.button2{
+    right:5px;
+    top:3px;
 }
