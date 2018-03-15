@@ -139,3 +139,42 @@ body{
 .startbtn{
     left: 50%;
 }
+.grills{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.grill{
+    position: absolute;
+    width:75px;
+    height: 10px;
+    background:#D3D3D3;
+    border-radius: 50px;
+    transform: rotate(62deg);
+    bottom: 0;
+    right: 0;
+}
+
+.grill1{
+    bottom: 100px;
+}
+.grill2{
+    bottom: 90px;
+    right: 20px;
+}
+.grill3{
+    bottom: 80px;
+    right: 40px;
+}
+.grill4{
+    bottom: 70px;
+    right: 60px;
+}
+.grill5{
+    bottom: 60px;
+    right: 80px;
+}
+.grill6{
+    bottom: 50px;
+    right: 100px;
+}
