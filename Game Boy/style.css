@@ -111,7 +111,7 @@ body{
     height: 50px;
     border-radius: 50%;
     background: #A22E5F;
-    border:2px solid black
+    border:2px solid black;
 }
 
 .button1{
@@ -121,4 +121,21 @@ body{
 .button2{
     right:5px;
     top:3px;
+}
+
+.btn{
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    background: #9c9c9c;
+    border-radius: 50px;
+    top: 82%;
+    transform: rotate(-25deg);
+    border:2px solid black;
+}
+.selectbtn{
+    left: 30%;
+}
+.startbtn{
+    left: 50%;
 }
