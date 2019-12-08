@@ -1,0 +1,507 @@
+:root{
+    --tabletop: rgb(228, 160, 13);
+    --legs: rgb(134, 5, 44);
+    --drawer: rgb(252, 100, 54);
+    --shadow: rgba(0, 0, 0, 0.281);
+    --laptop-screen:rgb(255, 247, 225);
+    --screen-border:rgb(92, 8, 71);
+    --laptop-body-top:rgb(253, 250, 242);
+    --laptop-body-bot:rgb(233, 204, 170);
+    --green:rgb(144, 218, 202);
+    --book-paper:rgb(252, 248, 241);
+    --book1 :#800080;
+    --book2: rgb(228, 178, 15);
+    --book3: rgb(0, 102, 128);
+    --book4: rgb(128, 0, 49);
+    --book5: rgb(115, 128, 0);
+    --map1: rgb(255, 123, 0);
+    --map2: rgb(255, 187, 0);
+    --map3: rgb(122, 26, 55);
+    --map5: rgb(166, 138, 187);
+}
+
+html{
+
+}
+body{
+    
+}
+.scene{
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 900px;
+    border: 2px solid black;
+    background: var(--green);
+    clip-path: inset(0px 0px);
+}
+
+/*--Laptop--*/
+.laptop{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 187px;
+    width: 380px;
+    height: 254px;
+}
+    .laptop .screen{
+        position: relative;
+        margin: 0 auto;
+        width: 280px;
+        height: 180px;
+        background: var(--laptop-screen);
+        border: 15px  solid var(--screen-border) ;
+        border-radius: 15px 15px 0 0;
+    }
+        .webcam{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: -11px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--laptop-body-top);
+        }
+    .laptop .body-top{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 14px;
+        background: var(--laptop-body-top);
+    }
+        .big-indent{
+            position: relative;
+            margin: 0 auto;
+            width: 60px;
+            border-top: 6px solid var(--laptop-body-bot);
+            border-left: 10px solid transparent;
+            border-right:10px solid transparent;
+            border-radius: 0 0 15px 15px ;
+        }
+        .small-indent {
+            position: relative;
+            margin: 0 auto;
+            width: 50px;
+            height: 2px;
+            background: var(--tabletop);
+        }
+    .laptop .body-bot{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 96%;
+        top: 224px;
+        border-top: 10px solid var(--laptop-body-bot);
+        border-left: 8px solid transparent;
+        border-right:8px solid transparent;
+        border-radius: 0 0 5px 5px ;
+    } 
+    .laptop-shadow{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        width: 95%;
+        height: 10px;
+        background: var(--shadow);
+        z-index:11;
+        opacity: 0.3;
+    }
+
+/*--Speakers--*/
+.box{
+    position: absolute;
+    width: 100px;
+    height: 180px;
+    bottom: 187px;
+}
+    .box .box-top{
+        position: relative;
+        margin: 0 auto;
+        height: 130px;
+        background: var(--screen-border);
+        border-radius: 10px 10px 0 0;
+    }
+        .speaker{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 5px solid var(--legs);
+            background: var(--drawer);
+        }
+            .inner-speaker{
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                top: 4px;
+                width: 38px;
+                height: 38px;
+                border: 2px solid rgba(0, 0, 0, 0.514);
+                border-radius: 50%;
+                background:var(--legs);
+            }
+        .speaker1{
+            top: 4px;
+        }
+        .speaker2{
+            bottom:4px;
+        }
+
+    .box .box-bot{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 3px;
+        width: 100px;
+        height: 17px;
+        background: var(--legs);
+        border-radius: 0px 0px 20px 20px;
+    }
+    .box-connect{
+        position: relative;
+        margin: 0 auto;
+        width: 15px;
+        height: 2px;
+        background: var(--legs);
+    }
+    .box-stand{
+        position: relative;
+        margin: 0 auto;
+        width:50px;
+        height: 8px;
+        background: var(--legs);
+        border-radius: 100px
+    }
+    .box-shadow{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0;
+        left: 3px;
+        width: 45px;
+        height: 8px;
+        background: var(--shadow);
+        z-index: 11;
+        opacity: 0.3;
+    }
+    .left-box{
+        left: 50px;
+    }
+    .right-box{
+        right: 50px;
+    }
+
+/*--Shelfs--*/    
+.shelf{
+    position: absolute;
+    width: 400px;
+    height: 15px;
+    background: var(--tabletop);
+}
+    .left-shelf{
+        left: 100px;
+        top: 400px;
+    }
+    .right-shelf{
+        right: 120px;
+        top: 350px;
+    }
+    .book{
+        position: absolute;
+        border-radius: 8px 0 0 8px;
+        box-shadow: inset 4px 4px 2px var(--shadow);
+    }
+    .book1{
+        top: -28px;
+        left: 20px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book1);
+        border-right: 0px;
+    }
+    .book2{
+        top: -56px;
+        left: 3px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book2);
+        box-shadow: inset -4px 4px 2px var(--shadow);
+        border-radius: 0px 8px 8px 0px;
+        border-left: 0px;
+    }
+    .book3{
+        top: -84px;
+        left: 10px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book3);
+        border-right: 0px;
+    }
+    .book4{
+        top: -112px;
+        left: 15px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book4);
+        border-right: 0px;
+    }
+    .shelf-shadow{
+        position: absolute;
+        bottom:-10px;
+        width: 400px;
+        height: 10px;
+        background: var(--shadow);
+        opacity: 0.3;
+    }
+    .map1{
+        position: absolute;
+        top:-134px;
+        left:165px;
+        width: 13px;
+        height: 134px;
+        background:var(--map1);
+        border-radius: 2px;
+        transform: rotate(2deg);
+    }
+    .map2{
+        position: absolute;
+        top: -156px;
+        left: 185px;
+        width: 30px;
+        height: 155px;
+        background: var(--map2);
+        border-radius: 5px;
+        transform: rotate(-5deg);
+    }
+        .label{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 24px;
+            height: 5px;
+            background: white;
+            border-radius: 1px;
+        }
+        .label1{
+            top: 20px;
+        }
+        .label2{
+            top: 30px;
+        }
+        .label3{
+            top: 40px;
+        }
+        .label4{
+            top: 50px;
+        }
+        .label5{
+            top: 60px;
+        }
+    .map3{
+        position: absolute;
+        top: -136px;
+        left: 216px;
+        width: 30px;
+        height: 135px;
+        background: var(--map3);
+        border-radius: 5px;
+        transform: rotate(-5deg);
+    }
+        .map3 .label1{
+            top:10px;
+        }
+        .map3 .label2{
+            top:20px;
+        }
+        .map3 .biglabel{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 30px;
+            margin: auto;
+            width: 100%;
+            height: 64px;
+            background: white;
+            border-radius: 2px;
+        }
+            .blackstripe{
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 100%;
+                height: 3px;
+                background: #000;
+            }
+            .stripe1{
+                top: 8px;
+            }
+            .stripe2{
+                top: 56px;
+            }
+        .map3 .label3{
+            top:100px;
+        }
+        .map3 .ring{
+            top:110px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    .book5{
+        top: -28px;
+        left: 253px;
+        width: 129px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book5);
+        border-right: 0px;
+    }
+    .map4{
+        position: absolute;
+        top: -109px;
+        left: 258px;
+        width: 30px;
+        height: 80px;
+        background: var(--map1);
+        border-radius: 5px;
+        transform: rotate(15deg);
+    }
+        .map4 .stripe1{
+            top: 8px;
+        }
+        .map4 .stripe2{
+            top: 14px;
+        }
+        .map4 .stripe3{
+            top: 60px;
+        }
+        .map4 .stripe4{
+            top: 66px;
+        }
+    .map5{
+        position: absolute;
+        top: -164px;
+        left: 302px;
+        width: 28px;
+        height: 135px;
+        background: var(--map5);
+        border-radius: 5px;
+        transform: rotate(-13deg);
+    }
+    .map5 .blackstripe{
+        top:10px;
+        background: #f95609;
+    }
+    .map5 .biglabel{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+        margin: auto;
+        width: 80%;
+        height: 81px;
+        background: white;
+        border-radius: 1px;
+    }
+    .map5 .label1{
+        top:110px;
+        width: 80%;
+        background: rgb(51, 3, 51);
+    }
+    .map5 .label2{
+        top:120px;
+        width: 80%;
+        background: rgb(51, 3, 51);
+    }
+
+/*--Desk--*/
+.desk{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    height: 23%;
+}
+.tabletop{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: var(--tabletop);
+    z-index: 10;
+}
+.leg{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    bottom:0;
+    background: var(--legs);
+    box-shadow: inset 0 40px var(--shadow);
+}
+    .left-leg{
+        left: 7%;   
+    }
+    .right-leg{
+        right: 7%;   
+    }
+.drawer{
+    position: absolute;
+    width: 23%;
+    height: 100%;
+    background: var(--drawer);
+    box-shadow: inset 0 40px var(--shadow);
+}
+    .left-drawer{
+        left:103px;
+    }
+    .right-drawer {
+        right:9%;
+    }
+.schuif{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 18px;
+    background: var(--tabletop);
+    box-shadow: inset 0 8px var(--legs);
+}
+.drawer1{
+    top: 60px;
+}
+.drawer2{
+    top: 110px;
+}
+.drawer3{
+    top: 160px;
+}
+
