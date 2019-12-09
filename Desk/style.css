@@ -1,7 +1,7 @@
 :root{
     --tabletop: rgb(228, 160, 13);
     --legs: rgb(134, 5, 44);
-    --drawer: rgb(255, 60, 0);
+    --drawer: rgb(252, 100, 54);
     --shadow: rgba(0, 0, 0, 0.281);
     --laptop-screen:rgb(255, 247, 225);
     --screen-border:rgb(92, 8, 71);
@@ -13,14 +13,13 @@
     --book2: rgb(228, 178, 15);
     --book3: rgb(0, 102, 128);
     --book4: rgb(128, 0, 49);
+    --book5: rgb(115, 128, 0);
+    --map1: rgb(255, 123, 0);
+    --map2: rgb(255, 187, 0);
+    --map3: rgb(122, 26, 55);
+    --map5: rgb(166, 138, 187);
 }
-
-html{
-
-}
-body{
     
-}
 .scene{
     position: relative;
     margin: 0 auto;
@@ -31,92 +30,542 @@ body{
     clip-path: inset(0px 0px);
 }
 
-/*--Laptop--*/
-.laptop{
+/*Clock*/
+.clock{
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     left: 0;
-    right: 0;
-    bottom: 187px;
-    width: 380px;
-    height: 254px;
+    right: 160px;
+    top:120px;
+    width: 130px;
+    height: 130px;
+    background: var(--book-paper);
+    border-radius: 50%;
+    border: 13px solid var(--drawer);
+    z-index: 2;
 }
-    .laptop .screen{
-        position: relative;
+    
+    .hour{
+        position: absolute;
         margin: 0 auto;
-        width: 280px;
-        height: 180px;
-        background: var(--laptop-screen);
-        border: 15px  solid var(--screen-border) ;
-        border-radius: 15px 15px 0 0;
+        left: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background: var(--map5);
+        border-radius: 50%;
     }
-        .webcam{
+    .twelve{
+        top:8px;
+    }
+    .three{
+        left: 100px;
+        top: 60px;
+    }
+    .six{
+        bottom: 8px;
+    }
+    .nine{
+        right: 100px;
+        top: 60px;
+    }
+    .little-pointer{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 27px;
+        width: 3px;
+        height: 43px;
+        background: black;
+        border-radius: 4px;
+    }
+    .big-pointer{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 36px;
+        right: 0;
+        top: 61px;
+        width: 3px;
+        height: 53px;
+        background: black;
+        border-radius: 4px;
+        transform: rotate(-45deg);
+    }
+    .clock-shadow{
+        position: absolute;
+    margin: auto;
+    left: 0;
+    right: 154px;
+    top: 124px;
+    width: 160px;
+    height: 160px;
+    background: var(--shadow);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 1;
+    }
+
+
+/*--Shelfs--*/    
+.shelf{
+    position: absolute;
+    width: 400px;
+    height: 15px;
+    background: var(--tabletop);
+}
+    .left-shelf{
+        left: 100px;
+        top: 400px;
+    }
+    .right-shelf{
+        right: 120px;
+        top: 350px;
+    }
+    .book{
+        position: absolute;
+        border-radius: 8px 0 0 8px;
+        box-shadow: inset 4px 4px 2px var(--shadow);
+    }
+
+    /*left-shelf items*/
+
+    .left-shelf .map1{
+        position: absolute;
+        left: 17px;
+        bottom: 16px;
+        width: 35px;
+        height: 176px;
+        background: var(--map5);
+        border-radius: 5px;
+        transform: rotate(5deg);
+    }
+    .left-shelf .map1::before{
+        content: " ";
+        top: 20px;
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        background: white;
+    }
+    .left-shelf .map1::after{
+        content: " ";
+        bottom: 20px;
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        background: white;
+    }
+    .left-shelf .map2{
+        position: absolute;
+        left: 55px;
+        bottom: 15px;
+        width: 35px;
+        height: 130px;
+        background: var(--legs);
+        border-radius: 5px;
+    }
+    .left-shelf .map2 .label1{
+        top: 15px;
+        width: 100%;
+        border-radius: 0;
+        background: var(--screen-border);
+    }
+    .left-shelf .map2 .label2{
+        top: 25px;
+        width: 100%;
+        border-radius: 0;
+        background: var(--screen-border);
+    }
+    .left-shelf .map2 .label3{
+        top: 105px;
+        width: 100%;
+        border-radius: 0;
+        background: var(--screen-border);
+    }
+    .left-shelf .map2 .label4{
+        top: 115px;
+        width: 100%;
+        border-radius: 0;
+        background: var(--screen-border);
+    }
+        .map2 .biglabel{
             position: absolute;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
             left: 0;
             right: 0;
-            top: -11px;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--laptop-body-top);
+            top: 32%;
+            width: 85%;
+            height: 35%;
+            background: white;
         }
-    .laptop .body-top{
+    .left-shelf .map3{
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 14px;
-        background: var(--laptop-body-top);
+        left: 91px;
+        bottom: 15px;
+        width: 35px;
+        height: 145px;
+        background: var(--book-paper);
+        border-radius: 5px;
     }
-        .big-indent{
-            position: relative;
-            margin: 0 auto;
-            width: 60px;
-            border-top: 6px solid var(--laptop-body-bot);
-            border-left: 10px solid transparent;
-            border-right:10px solid transparent;
-            border-radius: 0 0 15px 15px ;
+        .left-shelf .map3 .label1{
+            top: 60px;
+            background: var(--screen-border);
         }
-        .small-indent {
-            position: relative;
-            margin: 0 auto;
-            width: 50px;
-            height: 2px;
-            background: var(--tabletop);
+        .left-shelf .map3 .label2{
+            top: 70px;
+            background: var(--screen-border);
         }
-    .laptop .body-bot{
+        .left-shelf .map3 .label3{
+            top: 80px;
+            background: var(--screen-border);
+        }
+   
+    .left-shelf  .book1{
+        top: -28px;
+        left: 170px;
+        width: 131px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book3);
+        border-right: 0px;
+    }
+    .left-shelf  .book2{
+        top: -56px;
+        left: 182px;
+        width: 110px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--map3);
+        box-shadow: inset 4px 4px 2px var(--shadow);
+        border-radius: 8px 0px 0px 8px;
+        border-right: 0px;
+    }
+    .left-shelf .book3{
+        top: -84px;
+        left: 175px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--map2);
+        box-shadow: inset -4px 4px 2px var(--shadow);
+        border-radius: 0px 8px 8px 0px;
+        border-left: 0px;
+    }
+
+    .left-shelf .camera{
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        width: 96%;
-        top: 224px;
-        border-top: 10px solid var(--laptop-body-bot);
-        border-left: 8px solid transparent;
-        border-right:8px solid transparent;
-        border-radius: 0 0 5px 5px ;
-    } 
-    .laptop-shadow{
+        width: 74px;
+        height: 47px;
+        left: 315px;
+        top: -47px;
+    }
+    .camera  .button{
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        bottom: 10px;
-        width: 95%;
-        height: 10px;
+        width: 13px;
+        height: 3px;
+        top: 5px;
+        left: 4px;
+        background: var(--screen-border);
+        border-radius: 3px 3px 0 0;
+    }
+        .camera .body{
+            position: absolute;
+            width: 100%;
+            height:85% ;
+            bottom: 0;
+            background: var(--drawer);
+            border-radius: 2px 2px 0 0;
+        }
+        .camera .body .purplebody{
+            position: absolute;
+            top: 24%;
+            width: 100%;
+            height: 64%;
+            bottom: 0;
+            background: var(--map5);
+        }
+        .camera .body .flash{
+            position: absolute;
+            width: 13px;
+            height: 7px;
+            top: 1px;
+            right: 4px;
+            background: white;
+        }
+        .camera .body .lens{
+            position: absolute;
+            top: 18%;
+            right: 11px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+        }
+            .lens .innerlens{
+                position: absolute;
+                top: 14%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 20px;
+                height: 20px;
+                background: rgb(255, 81, 81);
+                border-radius: 50%;
+                border: 1px solid var(--screen-border);
+            }
+    .camera-shadow{
+        position: absolute;
+        width: 74px;
+        height: 8px;
+        left: 315px;
+        bottom: 8px;
         background: var(--shadow);
-        z-index:11;
+        opacity: 0.3;
+    }
+    .books-shadow{
+        position: absolute;
+        top: 0px;
+        left: 174px;
+        width: 131px;
+        height: 8px;
+        background: var(--shadow);
+        opacity: 0.3;
+    }
+    .maps-shadow{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        width: 120px;
+        height: 8px;
+        background: var(--shadow);
         opacity: 0.3;
     }
 
-/*--Speakers--*/
+/*right-shelf items*/
+    .book1{
+        top: -28px;
+        left: 20px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book1);
+        border-right: 0px;
+    }
+    .book2{
+        top: -56px;
+        left: 3px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book2);
+        box-shadow: inset -4px 4px 2px var(--shadow);
+        border-radius: 0px 8px 8px 0px;
+        border-left: 0px;
+    }
+    .book3{
+        top: -84px;
+        left: 10px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book3);
+        border-right: 0px;
+    }
+    .book4{
+        top: -112px;
+        left: 15px;
+        width:130px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book4);
+        border-right: 0px;
+    }
+    .shelf-shadow{
+        position: absolute;
+        bottom:-10px;
+        width: 400px;
+        height: 10px;
+        background: var(--shadow);
+        opacity: 0.3;
+    }
+    .right-shelf .map1{
+        position: absolute;
+        top:-134px;
+        left:165px;
+        width: 13px;
+        height: 134px;
+        background:var(--map1);
+        border-radius: 2px;
+        transform: rotate(2deg);
+    }
+    .right-shelf  .map2{
+        position: absolute;
+        top: -156px;
+        left: 185px;
+        width: 30px;
+        height: 155px;
+        background: var(--map2);
+        border-radius: 5px;
+        transform: rotate(-5deg);
+    }
+        .label{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 24px;
+            height: 5px;
+            background: white;
+            border-radius: 1px;
+        }
+        .label1{
+            top: 20px;
+        }
+        .label2{
+            top: 30px;
+        }
+        .label3{
+            top: 40px;
+        }
+        .label4{
+            top: 50px;
+        }
+        .label5{
+            top: 60px;
+        }
+        .right-shelf  .map3{
+        position: absolute;
+        top: -136px;
+        left: 216px;
+        width: 30px;
+        height: 135px;
+        background: var(--map3);
+        border-radius: 5px;
+        transform: rotate(-5deg);
+    }
+        .map3 .label1{
+            top:10px;
+        }
+        .map3 .label2{
+            top:20px;
+        }
+        .map3 .biglabel{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 30px;
+            margin: auto;
+            width: 100%;
+            height: 64px;
+            background: white;
+            border-radius: 2px;
+        }
+            .blackstripe{
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 100%;
+                height: 3px;
+                background: #000;
+            }
+            .stripe1{
+                top: 8px;
+            }
+            .stripe2{
+                top: 56px;
+            }
+        .map3 .label3{
+            top:100px;
+        }
+        .map3 .ring{
+            top:110px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    .book5{
+        top: -28px;
+        left: 253px;
+        width: 129px;
+        height: 20px;
+        background: var(--book-paper);
+        border: 4px solid var(--book5);
+        border-right: 0px;
+    }
+    .right-shelf  .map4{
+        position: absolute;
+        top: -109px;
+        left: 258px;
+        width: 30px;
+        height: 80px;
+        background: var(--map1);
+        border-radius: 5px;
+        transform: rotate(15deg);
+    }
+        .map4 .stripe1{
+            top: 8px;
+        }
+        .map4 .stripe2{
+            top: 14px;
+        }
+        .map4 .stripe3{
+            top: 60px;
+        }
+        .map4 .stripe4{
+            top: 66px;
+        }
+        .right-shelf  .map5{
+        position: absolute;
+        top: -179px;
+        left: 297px;
+        width: 28px;
+        height: 150px;
+        background: var(--map5);
+        border-radius: 5px;
+        transform: rotate(-13deg);
+    }
+    .map5 .blackstripe{
+        top:10px;
+        background: #f95609;
+    }
+    .map5 .biglabel{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+        margin: auto;
+        width: 80%;
+        height: 81px;
+        background: white;
+        border-radius: 1px;
+    }
+    .map5 .label1{
+        top:110px;
+        width: 80%;
+        background: rgb(51, 3, 51);
+    }
+    .map5 .label2{
+        top:120px;
+        width: 80%;
+        background: rgb(51, 3, 51);
+    }
+
+    .items-shadow{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        width: 95%;
+        height: 8px;
+        background: var(--shadow);
+        opacity: 0.3;
+    }
+
+
+    /*--Speakers--*/
 .box{
     position: absolute;
     width: 100px;
@@ -205,73 +654,90 @@ body{
         right: 50px;
     }
 
-/*--Shelfs--*/    
-.shelf{
+/*--Laptop--*/
+.laptop{
     position: absolute;
-    width: 400px;
-    height: 15px;
-    background: var(--tabletop);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 187px;
+    width: 380px;
+    height: 254px;
 }
-    .left-shelf{
-        left: 100px;
-        top: 400px;
+    .laptop .screen{
+        position: relative;
+        margin: 0 auto;
+        width: 280px;
+        height: 180px;
+        background: var(--laptop-screen);
+        border: 15px  solid var(--screen-border) ;
+        border-radius: 15px 15px 0 0;
     }
-        .book{
+        .webcam{
             position: absolute;
-            border-radius: 8px 0 0 8px;
-            box-shadow: inset 4px 4px 2px var(--shadow);
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: -11px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--laptop-body-top);
         }
-        .book1{
-            top: -28px;
-            left: 20px;
-            width:130px;
-            height: 20px;
-            background: var(--book-paper);
-            border: 4px solid var(--book1);
-            border-right: 0px;
-        }
-        .book2{
-            top: -56px;
-            left: 3px;
-            width:130px;
-            height: 20px;
-            background: var(--book-paper);
-            border: 4px solid var(--book2);
-            box-shadow: inset -4px 4px 2px var(--shadow);
-            border-radius: 0px 8px 8px 0px;
-            border-left: 0px;
-        }
-        .book3{
-            top: -84px;
-            left: 10px;
-            width:130px;
-            height: 20px;
-            background: var(--book-paper);
-            border: 4px solid var(--book3);
-            border-right: 0px;
-        }
-        .book4{
-            top: -112px;
-            left: 15px;
-            width:130px;
-            height: 20px;
-            background: var(--book-paper);
-            border: 4px solid var(--book4);
-            border-right: 0px;
-        }
-    .right-shelf{
-        right: 120px;
-        top: 350px;
-    }
-    .shelf-shadow{
+    .laptop .body-top{
         position: absolute;
-        bottom:-10px;
-        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 14px;
+        background: var(--laptop-body-top);
+    }
+        .big-indent{
+            position: relative;
+            margin: 0 auto;
+            width: 60px;
+            border-top: 6px solid var(--laptop-body-bot);
+            border-left: 10px solid transparent;
+            border-right:10px solid transparent;
+            border-radius: 0 0 15px 15px ;
+        }
+        .small-indent {
+            position: relative;
+            margin: 0 auto;
+            width: 50px;
+            height: 2px;
+            background: var(--tabletop);
+        }
+    .laptop .body-bot{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 96%;
+        top: 224px;
+        border-top: 10px solid var(--laptop-body-bot);
+        border-left: 8px solid transparent;
+        border-right:8px solid transparent;
+        border-radius: 0 0 5px 5px ;
+    } 
+    .laptop-shadow{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        width: 95%;
         height: 10px;
         background: var(--shadow);
+        z-index:11;
         opacity: 0.3;
     }
-
 
 /*--Desk--*/
 .desk{
@@ -338,4 +804,3 @@ body{
 .drawer3{
     top: 160px;
 }
-
