@@ -812,6 +812,127 @@
     overflow: hidden;
     box-shadow: inset 0px -20px 0 0px var(--darker-shadow);
 }
+    .electronics .black-circle{
+        position: absolute;
+        margin: auto;
+        left: -40px;
+        right: 0px;
+        top: 20px;
+        width: 80%;
+        height: 60px;
+        border-radius: 50px;
+        background: var(--darker-shadow);
+        z-index: 12;
+    }
+    .electronics .white-line{
+        position: absolute;
+        margin: auto;
+        right: 0px;
+        top: 30px;
+        width: 100%;
+        height: 3px;
+        border-radius: 50px;
+        background: var(--background);
+        z-index: 13;
+    }
+        .electronics .big-white-line .left-part{
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 70px;
+            width: 20%;
+            height: 6px;
+            background: var(--background);
+            z-index: 13;
+        }
+            .left-part .left-ramp{
+                position: absolute;
+                margin: auto;
+                top: 0px;
+                left: 96%;
+                width: 80%;
+                height: 6px;
+                background: var(--background);
+                transform-origin: left;
+                transform: rotate(-40deg);
+                z-index: 13;
+            }
+        .electronics .big-white-line .middle-part{
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 47px;
+            width: 39%;
+            height: 6px;
+            background: var(--background);
+            z-index: 13;
+        }    
+        .electronics .big-white-line .right-part{
+            position: absolute;
+            margin: auto;
+            top: 70px;
+            width: 20%;
+            height: 6px;
+            right: 0;
+            background: var(--background);
+            z-index: 13;
+        }
+            .right-part .right-ramp{
+                position: absolute;
+                margin: auto;
+                top: 0px;
+                right: 96%;
+                width: 80%;
+                height: 6px;
+                background: var(--background);
+                transform-origin: right;
+                transform: rotate(40deg);
+                z-index: 13;
+            }
+    .electronics .small-white-line .left-part{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 60px;
+        width: 7%;
+        height: 3px;
+        background: var(--background);
+        z-index: 13;
+    }
+    .electronics .small-white-line .middle-part{
+        position: absolute;
+        margin: auto;
+        left: 15px;
+        top: 60px;
+        width: 5%;
+        height: 3px;
+        background: var(--background);
+        z-index: 13;
+        transform-origin: left;
+        transform: rotate(-40deg);
+    }
+    .electronics .small-white-line .right-part{
+        position: absolute;
+        margin: auto;
+        left: 24px;
+        top: 53px;
+        width: 4%;
+        height: 3px;
+        background: var(--background);
+        z-index: 13;
+    }
+    .electronics .small-white-line .bol{
+        position: absolute;
+        margin: auto;
+        left: 32px;
+        top: 50px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--background);
+        z-index: 13;
+    }
 
     .torso .orangeline{
         position: absolute;
@@ -994,21 +1115,8 @@
     border-radius: 50px;
     background: var(--background);
     z-index: 11;
-}
-.foot::after{
-    content: "";
-    position: absolute;
-    margin: auto;
-    left:-10px;
-    right:0;
-    bottom: 0;
-    width: 110px;
-    height: 60px;
-    border-radius: 50px 50px 0 0;
-    border-bottom: 5px solid var(--light-orange);
-    box-shadow: inset 15px 0px 0 0 var(--shadow);
-    background: var(--background);
-    z-index: 12;
+    clip-path: inset(0,0);
+    overflow: hidden;
 }
 .right-foot{
     left: 140px;
@@ -1028,6 +1136,87 @@
     left:-10px;
     box-shadow: inset -15px 0px 0 0 var(--shadow);
 }
+.shoe{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 53px;
+    width: 110px;
+    height: 60px;
+    border-radius: 50px 50px 0 0;
+    border-bottom: 5px solid var(--light-orange);
+    box-shadow: inset 15px 0px 0 0 var(--shadow);
+    background: var(--background);
+    z-index: 12;
+}
+    .left-shoe{
+        left: -150px;
+    }  
+    .right-shoe{
+        left: 150px;
+    }
+
+/*--Foot Details--*/
+.foot .orangeline{
+    position: absolute;
+    width: 58px;
+    height: 50%;
+    border: 7px solid var(--light-orange);
+}
+.foot .small-orangeline{
+    position: absolute;
+    margin: auto;
+    left:0;
+    right:0;
+    width: 3px;
+    height: 100%;
+    background: var(--light-orange);
+}
+.foot .black-square{
+    position: absolute;
+    margin: auto;
+    left:0;
+    right:0;
+    bottom: 50px;
+    width: 58px;
+    height: 50%;
+    border: 5px solid var(--darker-shadow);
+}
+.right-foot .black-square{
+    margin: auto;
+    left:-90px;
+    transform: skewY(40deg);
+}
+.right-foot .orangeline{
+    margin: auto;
+    left:50px;
+    top: 0;
+    transform: skewY(40deg);
+}
+.right-foot .small-orangeline{
+    margin: auto;
+    right:-10px;
+    top: 0;
+    transform: skewY(40deg);
+}
+
+.left-foot .black-square{
+    margin: auto;
+    right:-90px;
+    transform: skewY(-40deg);
+}
+.left-foot .orangeline{
+    margin: auto;
+    left:-43px;
+    top: 0;
+    transform: skewY(-40deg);
+}
+.left-foot .small-orangeline{
+    margin: auto;
+    right:10px;
+    top: 0;
+    transform: skewY(40deg);
+}
 
 /*--Ground--*/
 .ground{
@@ -1045,9 +1234,9 @@
     content: "";
     position: absolute;
     margin: auto;
-    left:0;
+    left: 0;
     bottom: 10px;
-    right:184px;
+    right: 203px;
     width: 7%;
     height: 5px;
     background: var(--darker-shadow);
