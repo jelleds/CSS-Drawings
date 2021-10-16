@@ -1,0 +1,101 @@
+.kader{
+   position: relative;
+   width: 650px;
+   height: 800px;
+   background: rgb(247, 247, 247);
+   border: 21px solid rgb(48, 48, 48);
+   box-shadow: inset 0px 0px 15px 1px rgb(48, 48, 48);
+   margin: 0 auto;
+   margin-top: 150px;
+}
+
+.container{
+   width: 480px;
+   height: 630px;
+   background: black;
+   margin: 0 auto;
+   margin-top: 65px;
+}
+
+.face{
+   position: absolute;
+   width: 480px;
+   height: 230px;
+   background: rgb(255, 204, 157);
+   margin-top: 80px;
+}
+.bril-beentjes{
+   position: absolute;
+   top: 35%;
+   width: 480px;
+   height: 10px;
+   background-color: black;
+}
+.glass{
+   position: absolute;
+   top: 12%;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   background: rgb(255, 204, 157);
+   border: 10px solid black;
+}
+.glass-left{
+   left: 15%;
+}
+.glass-right{
+   right: 15%;
+}
+.eye{
+   position: relative;
+   top: 15px;
+   width: 40px;
+   height: 70px;
+   background: black;
+   border-radius: 30px;
+   margin: 0 auto;
+}
+.mouth{
+   position: relative;
+   width: 60px;
+   height: 25px;
+   border-radius: 0 0 200px 200px;
+   background-color: black;
+   margin: 0 auto;
+   top: 170px;
+}
+.scarf{
+   position: absolute;
+   width: 480px;
+   height: 50px;
+   top: 375px;
+   background-color: #8D191C;
+}
+.yellow-stripe{
+   position: absolute;
+   width: 96px;
+   height: 50px;
+   background-color: #FDB813;
+}
+.stripe1{
+   left: 96px;
+}
+.stripe2{
+   right: 96px;
+}
+.scarf-part{
+   position: absolute;
+   width: 96px;
+   height: 150px;
+   background: #8D191C;
+   top: 425px;
+   right: 160px;
+}
+.stripe3{
+   top: 50px;
+}
+h1{
+   text-align: center;
+   font-family: "Harry P";
+   font-size: 6rem;
+}
