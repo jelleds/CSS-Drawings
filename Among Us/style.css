@@ -1,0 +1,110 @@
+ :root{
+   --green: rgb(18, 185, 138);
+   --canvas: rgb(23, 51, 67);
+   --visor-blue: rgb(196, 255, 253);
+   --shadow-green: rgb(16, 81, 75);
+   --shadow-dark: rgb(12, 39, 55);
+ }
+
+ html{
+   background: var(--canvas);
+ }
+
+   .box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 1100px;
+   }
+   .wrapper{
+      position: relative;
+      background: var(--canvas);
+      width: 1000px;
+      height: 1000px;
+   }
+   .body{
+      position: absolute;
+      left: 400px;
+      top: 150px;
+      width: 300px;
+      height: 300px;
+      background-color: var(--green);
+      border-radius: 110px 200px 0 0;
+      border: 20px solid #000;
+      border-bottom: none;
+      box-shadow: -100px -1px 60px -60px var(--shadow-green) inset;
+   }
+   .leg{
+      position: absolute;
+      background-color: var(--green);
+      width: 100px;
+      height: 130px;
+      border: 20px solid #000;
+      border-top:none;
+   }
+   .left-leg{
+      left: 400px;
+      top: 469px;
+      border-radius: 0 0 55px 40px;
+   }
+   .right-leg{
+      left: 600px;
+      top: 469px;
+      border-radius: 0 0 55px 40px;
+      box-shadow: -100px -1px 60px -60px var(--shadow-green) inset;
+   }
+   .leg-middle-part{
+      position: absolute;
+      width: 120px;
+      height: 15px;
+      background: #000;
+      left: 519px;
+      top: 459px;
+      border-radius:20px 5px 100px 20px;
+   }
+   .backpack{
+      position: absolute;
+      width: 64px;
+      height: 200px;
+      background: var(--green);
+      border: 20px solid #000;
+      border-right: none;
+      left: 335px;
+      top:300px;
+      border-radius: 40px;
+      box-shadow: -23px -10px 20px 7px var(--shadow-green) inset;
+   }
+   .visor{
+      position: absolute;
+      background: var(--visor-blue);
+      width: 170px;
+      height: 100px;
+      left: 550px;
+      top: 220px;
+      border: 20px solid #000;
+      border-radius: 60px 200px 100px 80px;
+      transform: perspective(100px);
+      box-shadow: -1px -20px 50px 2px var(--shadow-green) inset ;
+   }
+   .visor:before{
+      content:"";
+      position: absolute;
+      width: 80px;
+      height: 30px;
+      right: 40px;
+      top: 10px;
+      background: #fff;
+      border-radius: 40%;
+      filter: blur(8px);
+   }
+
+   .shadow{
+      position: absolute;
+      width: 440px;
+      height: 50px;
+      background: var(--shadow-dark);
+      border-radius: 50%;
+      left: 330px;
+      top: 590px;
+   }
+   
